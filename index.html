@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FCC Weather App</title>
+    <!-- Bootlstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy"
+        crossorigin="anonymous">
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Main content start -->
+    <div class="container">
+
+        <br>
+        <br>
+        <div class="jumbotron">
+            <h1 style="display: inline;" class="display-4" id="region">...</h1>
+            <span class="lead" id="country">...</span>
+            <hr class="my-4">
+            <h6 id="localtime">...
+
+            </h6>
+        </div>
+        <div class="row">
+            <!-- Current Weather Box -->
+            <div class="col-sm text-center box">
+                <img id="weatherIcon" src="https://cdn.apixu.com/weather/64x64/night/113.png" alt="weather">
+                <span id="weatherText">...</span>
+            </div>
+            <!-- Current Temp Box -->
+            <div class="col-sm text-center box">
+                <img src="/img/temp.png" alt="temperature" width="25%">
+                <span id="temp">...</span>
+            </div>
+            <!-- Current Wind Box -->
+            <div class="col-sm text-center box">
+                <img src="/img/wind.png" alt="wind" width="25%">
+                <span id="wind">...</span>
+            </div>
+            <!-- Current Humidity Box -->
+            <div class="col-sm text-center box">
+                <img src="/img/humidity.png" alt="humidity" width="23%">
+                <span id="humidity">...</span>
+            </div>
+        </div>
+
+        <!-- Search Form -->
+        <div class="input-group mb-3">
+            <input id="searchTxtBox" type="text" class="form-control form-control-lg" placeholder="Lookup by location" >
+            <div class="input-group-append">
+                <button class="btn btn-outline-secondary" type="button" id="searchBtn">Search</button>
+            </div>
+        </div>
+
+        <!-- Credits -->
+        <div class="card">
+            <h5 class="card-header">Credits</h5>
+            <div class="card-body">
+                <p class="card-text">
+                    Cosuming <a href="https://www.apixu.com" target="_blank">APIXU</a> Weather API
+                    <br>
+                    Icon made by <a href="https://www.flaticon.com/authors/those-icons" target="_blank">Those Icons</a> from www.flaticon.com
+                    <br>
+                    Styled using Bootstrap 4
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- Main content end -->
+    <!-- Bootstrap Scripts -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4"
+        crossorigin="anonymous"></script>
+    <!-- Custom Script -->
+    <script src="app.js"></script>
+</body>
+
+</html>

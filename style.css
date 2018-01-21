@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,800');
+
+body {
+    background: #EEE;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.box {
+    min-height: 150px;
+}
+
+.card {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.card > p {
+    font-size: 16px;
+}
+
+.jumbotron {
+    background: inherit;
+    margin-bottom: 0px;
+}
+
+.btn-outline-secondary {
+    font-size: 1.35rem;
+}
